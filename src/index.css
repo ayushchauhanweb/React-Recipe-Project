@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #faf6ef;
+  --color-card: #ffffff;
+  --color-text: #2b2b2b;
+  --color-muted: #6b6b6b;
+  --color-accent: #b5472b;
+  --color-accent-hover: #8f3820;
+  --color-border: #e3dccf;
+  --font-serif: Georgia, serif;
+  --font-sans: Arial, sans-serif;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  /* width: fit-content; */
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  clip-path: inset(0 3ch 0 0);
+  animation: l4 1s steps(4) infinite;
+
+}
+.loader:before {
+  content:"Loading..."
+}
+@keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}
